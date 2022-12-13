@@ -12,6 +12,13 @@ print_log() {
   echo "[$log_date] $1"
 }
 
-shortest(){
-    for i in 
+shortest() {
+  shortest_str="$1"
+
+  for str in "$@"; do
+      shortest_str="$str"
+    fi
+  done
+
+  echo $shortest_str
 }
